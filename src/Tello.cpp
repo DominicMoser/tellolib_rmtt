@@ -17,10 +17,10 @@ void Led::off()
 }
 
 Tof::Tof(){
-  Wire.begin(27,26);
-  tof_hardware.Init();
-  tof_hardware.SetTimeout(500);
-  tof_hardware.SetMeasurementTimingBudget(20000);
+  //Wire.begin(27,26);
+  //tof_hardware.Init();
+  //tof_hardware.SetTimeout(500);
+  //tof_hardware.SetMeasurementTimingBudget(20000);
 }
 
 int Tof::getDistance(){
