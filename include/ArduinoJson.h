@@ -6,7 +6,7 @@
 
 #ifdef __cplusplus
 
-#include "ArduincoJson/ArduinoJson.hpp"
+#include "ArduinoJson/ArduinoJson.hpp"
 
 using namespace ArduinoJson;
 
