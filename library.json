@@ -1,6 +1,6 @@
 {
     "name": "rmtt",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "CPP Library for easy programming of the RoboMaster TelloTalent expansion. Used for the InnovationNation Courses.",
     "keywords": "test",
     "repository":
