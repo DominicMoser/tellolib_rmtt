@@ -1,5 +1,6 @@
 #include "RMTT_Libs.h"
-
+#include "RMTT_Protocol.h"
+#include "RMTT_TOF.h"
 class Led{
 private:
   int r, g, b;
@@ -10,10 +11,31 @@ public:
   void off();
 };
 
+class Tof{
+private:
+  RMTT_TOF tof_hardware;
+public:
+  Tof();
+  int getDistance();
+};
+
 class Tello{
 private:
-    Led myLed;
+  RMTT_Protocol sdk;
 public:
-    Tello();
+  Tello();
+  void takeoff();
+  void land();
+};
+
+class Controller{
+private:
+    Led myLED;
+    Tof myTOF;
+    Tello myTello;
+public:
+    Controller();
     Led& led();
+    Tof& tof();
+    Tello& tello();
 };
