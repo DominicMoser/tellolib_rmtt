@@ -30,12 +30,12 @@ public:
 
 class Controller{
 private:
-    Led myLED;
-    Tof myTOF;
-    Tello myTello;
+    Led myLED = Led();
+    Tof myTOF = Tof();
+    //Tello myTello = Tello();
 public:
     Controller();
     Led& led();
     Tof& tof();
-    Tello& tello();
+    //Tello& tello();
 };

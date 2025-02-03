@@ -42,9 +42,9 @@ Tof& Controller::tof(){
 
 
 
-Tello& Controller::tello(){
- return myTello;
-};
+//Tello& Controller::tello(){
+ //return myTello;
+//};
 
 Tello::Tello(){
   sdk.startUntilControl();
