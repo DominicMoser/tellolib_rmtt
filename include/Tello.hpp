@@ -32,7 +32,7 @@ class Controller{
 private:
     Led myLED = Led();
     Tof myTOF = Tof();
-    //Tello myTello = Tello();
+    Tello myTello;
 public:
     Controller();
     Led& led();
