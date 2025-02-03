@@ -28,8 +28,8 @@ int Tof::getDistance(){
 }
 
 Controller::Controller(){
-    Serial.begin(115200);
-    Serial1.begin(1000000, SERIAL_8N1, 23, 18);
+    //Serial.begin(115200);
+    //Serial1.begin(1000000, SERIAL_8N1, 23, 18);
 };
 
 Led& Controller::led(){
